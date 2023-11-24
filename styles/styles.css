@@ -30,7 +30,7 @@
   }
 
   h1, h2, h3, h4{
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     color: var(--primary-text-color);
   }
 
@@ -59,3 +59,14 @@
        text-decoration: underline;
     }
 /*end nav styling*/
+
+/*start section styling*/
+    p{
+        max-width: 60ch;
+    }
+    .intro{
+        margin-top: var(--primary-margin);
+    }
+
+
+/*end section styling*/
