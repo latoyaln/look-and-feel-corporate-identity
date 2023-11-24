@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*fonts*/
+    --font-primary: Helvetica, 'Lato', Arial, sans-serif;
+    --font-secondary: 'Lato', "Lucida Grande", Tahoma, Sans-Serif;
+
+    /*kleuren*/
+    --primary-text-color: #388087;
+    --primary-text-dark: #000;
+    --background-light: #fff;
+    --accent-color-light:#f6f6f2;
+    --labels-color: #c2edce;
+
+    /*spaces*/
+    --primary-margin: 5vh;
+    --full-width: 100vw;
+
+    /*nav spacing*/
+    --nav-padding-primary: 1em;
+    --nav-padding-secondary: 4em;
+  }
+
+  body{
+    font-family: var(--font-primary);
+  }
+
+  h1, h2, h3, h4{
+    font-family: var(--font-primary);
+    color: var(--primary-text-color);
+  }
+
+/*start nav styling*/
+    nav{
+        background-color: var(--primary-text-color);
+        font-family: var(--font-secondary);
+        max-width: var(--full-width);
+        height: 8vh;
+        text-align: center;
+        padding: var(--nav-padding-primary);
+        margin-top: var(--primary-margin);
+    }
+
+    nav li a, nav li{
+        color: var(--background-light);
+        text-decoration: none;
+        display: inline-block;
+    }
+    nav a{
+        padding-left: var(--nav-padding-secondary);
+    }
+
+    nav a:hover{
+       color: var(--accent-color-light);
+       text-decoration: underline;
+    }
+/*end nav styling*/
