@@ -6,34 +6,71 @@
 
 :root {
     /*fonts*/
-    --font-primary: Helvetica, 'Lato', Arial, sans-serif;
-    --font-secondary: 'Lato', "Lucida Grande", Tahoma, Sans-Serif;
+    --paragraphs: Helvetica, 'Lato', Arial, sans-serif;
+    --headings: 'Lato', "Lucida Grande", Tahoma, Sans-Serif;
 
     /*kleuren*/
     --primary-text-color: #388087;
     --primary-text-dark: #000;
-    --background-light: #fff;
-    --accent-color-light:#f6f6f2;
+    --background: #fff;
+    --accent-color:#f6f6f2;
     --labels-color: #c2edce;
 
     /*spaces*/
     --primary-margin: 5vh;
     --full-width: 100vw;
+    --half-width: 50vw;
+    --full-height: 100vh;
+    --half-height: 50vh;
+    --section-gap: 5vw;
 
     /*nav spacing*/
-    --nav-padding-primary: 1em;
-    --nav-padding-secondary: 4em;
+    --nav-padding-primary: 1rem;
+    --nav-padding-secondary: 4rem;
+
+    /*font spacing*/
+    --headings-space: 1rem;
+    --paragraphs-space: 0.5rem;
+
+    /*font-sizes*/
+    --size-h1: 2rem;
+    --size-button: 1rem;
+
+    /*sidebar*/
+    --sidebar-width: 20vw;
+    --sidebar-height: 100vw;
+
+    /*cards*/
+    --card-section-width: 80vw;
+    --cards-width: 30%;
+    --cards-height: 30vh;
+    --info-padding: 0.5rem;
+
+    /*border*/
+    --border-radius: 1rem;
   }
 
   body{
-    font-family: var(--font-primary);
+    font-family: var(--paragraphs);
   }
 
   h1, h2, h3, h4{
-    font-family: var(--font-secondary);
+    font-family: var(--headings);
     color: var(--primary-text-color);
+    padding-bottom: var(--headings-space);
   }
 
+  h1{
+    font-size: var(--font-size-h1);
+  }
+
+  header img{
+    padding-top: var(--nav-padding-secondary);
+    width: 10vw;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
 /*start nav styling*/
     nav{
         background-color: var(--primary-text-color);
@@ -46,7 +83,7 @@
     }
 
     nav li a, nav li{
-        color: var(--background-light);
+        color: var(--background);
         text-decoration: none;
         display: inline-block;
     }
@@ -55,18 +92,102 @@
     }
 
     nav a:hover{
-       color: var(--accent-color-light);
+       color: var(--accent-color);
        text-decoration: underline;
     }
 /*end nav styling*/
 
-/*start section styling*/
+/*start section styling*/   
+    
     p{
         max-width: 60ch;
-    }
-    .intro{
-        margin-top: var(--primary-margin);
+        padding: var(--paragraphs-space);
+
     }
 
+    /*intro*/
+        .intro{
+            margin-top: var(--primary-margin);
+            padding: var(--primary-margin);
+        }
+    /*end intro*/
 
+
+    /*sidebar*/
+        .sidebar{
+            width: var(--sidebar-width);
+            height: var(--sidebar-height);
+            background-color: var(--accent-color);
+            padding-left: var(--nav-padding-primary);
+            float: left;
+        }
+
+    /*sidebar end*/
+
+    .iniatieven{
+        margin-bottom: var(--primary-margin);
+    }
+
+     .initiatieven-content {
+        width: var(--card-section-width);
+        display: flex;
+        flex-wrap: wrap; /*the flexible items will wrap if necessary*/
+        justify-content: space-evenly;
+        padding-left: var(--section-gap);
+    } 
+
+    .initiatieven-content h1{
+        width: var(--full-width);
+        font-size: var(--size-h1);
+    }
+
+    .card{
+        width: var(--cards-width);
+        margin: 10px;
+        -webkit-box-shadow:  rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 5px; /* Rounded corners */
+        margin-bottom: 10vh;
+    }
+
+    .card-content {
+        align-items: center;
+        margin: auto;
+        border: var(--primary-text-color);
+        background-color: var(--background);
+        height: var(--cards-height);
+        padding: var(--nav-padding-primary);
+    }
+
+    .card button{
+        display: block;
+        width: 100%;
+        background-color: var(--primary-text-color);
+        height: 10%;
+        border: none;
+    }
+
+    .card button a{
+        color: var(--background) ;
+        text-decoration: none;
+        font-size: var(--size-button);
+    }
+
+    .card img{
+        width:  100%;
+        height: 40%;
+        object-fit: cover;
+    }
+    .card-content p i{
+        color: var(--primary-text-dark);
+    }
+
+   .info-initiatief{
+        display: inline-block;
+        background-color: var(--labels-color);
+        font-family: var(--font-secondary);
+        padding: var(--info-padding);
+        font-style: italic;
+    }
+   
 /*end section styling*/
