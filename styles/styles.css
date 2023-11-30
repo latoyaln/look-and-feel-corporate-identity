@@ -85,6 +85,7 @@
         margin-top: var(--primary-margin);
         position: sticky;
         top: 0;
+        z-index: 20000;
 
         & li a, li{
             color: var(--background);
@@ -130,19 +131,20 @@
                 }
             }
 
-            &  .intro-text {
-                flex: 1;
-                max-width: 50%;
-                padding: 0 20px;
-    
-                & h1{
-                    font-size:  var(--size-h1-intro) ;
-                }
-    
-                & span{
-                    color: #000;
-                    display: block;
-                }
+          
+        }
+         .intro-text {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 20px;
+        }
+
+        .intro-text h1{
+            font-size:  var(--size-h1-intro) ;
+
+            & span {
+                color: #000;
+                display: block;
             }
         }
     /*end intro*/
@@ -195,9 +197,11 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         border-radius: 5px; /* Rounded corners */
         margin-bottom: 10vh;
+        position: relative;
 
         & button{
             display: block;
+            position: absolute; 
             width: 100%;
             background-color: var(--primary-text-color);
             height: 10%;
@@ -280,27 +284,36 @@ button:hover{
 
     main{
       display: inline-block;
-      position: relative;
-      width: var(--full-width);
    }
-
     nav{
       z-index: 20000;
     }
 
-    .intro-text h1{
-        font-size:8px;
+  header img{
+    width: 50%;
+  }
+
+    .intro-text h1 {
+        font-size: var(--size-h1); 
+        padding-left: var(--paragraphs-space);
     }
+    .intro-text p{
+        padding-left: var(--paragraphs-space);
+    }
+   
 
 
   /* Display filter options next to each other */
   label {
       display: inline-block;
   }
-    
-  .initiatieven{
-    width: 80vw;
-    float: left;
+
+  .initiatieven-content{
+    margin-top: var(--primary-margin);
+  }
+
+  .initiatieven-content h1{
+    margin-top: var(--primary-margin);
   }
 
   .card  {
@@ -309,15 +322,8 @@ button:hover{
     border-radius: 10px; /* Rounded corners */
     padding:0.5em 1em;
   }
-
-
   .card-content{
     height: 40vh;
   }
-  img{
-    min-width: 100%;
-    height: auto;
-  }
-
 }
 
