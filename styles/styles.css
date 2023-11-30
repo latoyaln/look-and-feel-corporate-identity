@@ -37,9 +37,6 @@
     --size-button: 1rem;
     --size-h1-intro: 4rem;
 
-    /*sidebar*/
-    --sidebar-width: 20vw;
-
     /*cards*/
     --card-section-width: 80vw;
     --cards-width: 30%;
@@ -277,4 +274,50 @@ button:hover{
     color: var(--primary-text-color);
 }
 /*end section styling*/
+
+/* Responsive style for mobile (S) screens */
+@media (max-width: 900px)  {
+
+    main{
+      display: inline-block;
+      position: relative;
+      width: var(--full-width);
+   }
+
+    nav{
+      z-index: 20000;
+    }
+
+    .intro-text h1{
+        font-size:8px;
+    }
+
+
+  /* Display filter options next to each other */
+  label {
+      display: inline-block;
+  }
+    
+  .initiatieven{
+    width: 80vw;
+    float: left;
+  }
+
+  .card  {
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners */
+    padding:0.5em 1em;
+  }
+
+
+  .card-content{
+    height: 40vh;
+  }
+  img{
+    min-width: 100%;
+    height: auto;
+  }
+
+}
 
