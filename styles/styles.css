@@ -282,13 +282,6 @@ button:hover{
 /* Responsive style for mobile (S) screens */
 @media (max-width: 900px)  {
 
-    main{
-      display: inline-block;
-   }
-    nav{
-      z-index: 20000;
-    }
-
   header img{
     width: 50%;
   }
@@ -300,8 +293,6 @@ button:hover{
     .intro-text p{
         padding-left: var(--paragraphs-space);
     }
-   
-
 
   /* Display filter options next to each other */
   label {
