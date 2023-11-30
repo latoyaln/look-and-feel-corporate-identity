@@ -16,38 +16,34 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#">Initiatieven</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Historie</a></li>
+                <li><a href="#about">Over</a></li>
+                <li><a href="#initiatieven">Initiatieven</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <section class="intro">
-            <h1>Buurtinitiatieven</h1>
-            <p> Er zijn veel verschillenden initiatieven in de buurt van Oud-West. Echter zijn deze vaak lastig te vinden. 
-                Om dit probleem op te lossen is dit digitaal platform ontwikkeld met een verzameling van diverse Buurtinitiatieven.</p>
+            <section class="intro-image">
+                <img src="https://images.unsplash.com/photo-1580996378027-23040f16f157?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="unsplash image amsterdam">
+            </section>
+            <article class="intro-text" id="about">
+                <h1><span>Ontdek nu alle </span> Buurt initiatieven</h1>
+            </article>
         </section>
         <section class="initiatieven">
-            <section class="sidebar">
+            <ul class="filter">
                 <h2>Filter op:</h2>
-
-                <h3>prijs</h3>
-                <label><input type="checkbox" name="price" value="paid"> betaald</label>
-                <label> <input type="checkbox" name="price" value="free"> gratis</label>
-            
-                <h3>initiatiefnemers</h3>
-                    <label><input type="checkbox" name="person" value="ask"> vraag</label>
-                    <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
-            
-                <h3>categorie</h3>
-                <label><input type="checkbox" name="categ" value="sport"> sport</label>
-                <label> <input type="checkbox" name="categ"  value="food"> eten</label>
-                <label><input type="checkbox" name="categ" value="culture"> cultuur</label>
-                <label> <input type="checkbox" name="categ" value="music"> muziek</label>
-                <label><input type="checkbox" name="categ"  value="kids"> kinderen</label>
-                <label><input type="checkbox" name="categ"  value="class"> les</label>
-            </section>
-            <section class="initiatieven-content">
+                <li>gratis</li>
+                <li>betaald</li>
+                <li>sport</li>
+                <li>eten</li>
+                <li>cultuur</li>
+                <li>muziek</li>
+                <li>kinderen</li>
+                <li>les</li>
+            </ul>
+           
+            <section class="initiatieven-content" id="initiatieven">
                 <h1>aanbod</h1>
                 
                  <article class="card">
@@ -64,7 +60,7 @@
                     <p>Organiseert elk jaar 4-mei herdenking
                         in Amsterdam oud-west in de passage van De Hallen</p>
                     </section>
-                    <button> <a href="https://dehallen-amsterdam.nl/4-mei/">Meer Informatie</a></button>
+                    <button> <a href="https://dehallen-amsterdam.nl/4-mei/" target="_blank">Meer Informatie</a></button>
                 </article>
 
                 <article class="card">
@@ -81,7 +77,7 @@
                     <p>Speeltuinvereniging/speeltuin met toezicht 
                         waar veel kidsactiviteiten worden georganiseerd</p>
                     </section>
-                    <button> <a href="https://www.bilderdijkpark.nl/wp/asv-bilderdijkpark/">Meer Informatie</a></button>
+                    <button> <a href="https://www.bilderdijkpark.nl/wp/asv-bilderdijkpark/" target="_blank">Meer Informatie</a></button>
                 </article>
 
                 <article class="card">
@@ -96,10 +92,73 @@
                     
                     <p>Amsterdams Buurvrouwen Contact (ABC) organiseert taalles voor geïsoleerde anderstaligen </p>
                     </section>
-                    <button> <a href="https://www.deregenboog.org/nl/projecten/taalmaatje-van-het-amsterdams-buurvrouwen-contact">Meer Informatie</a></button>
+                    <button> <a href="https://www.deregenboog.org/nl/projecten/taalmaatje-van-het-amsterdams-buurvrouwen-contact" target="_blank">Meer Informatie</a></button>
+                </article>
+                <h1>vraag</h1>
+                <article class="card">
+                    
+                    <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1442&q=80" alt="Boeren voor buren">
+                    <section class="card-content">
+
+                    <h2>Boeren voor Buren</h2>
+
+                    <p class="info-initiatief"> <i class="fa-solid fa-location-dot"  alt="icoon locatie"></i>  diverse locatie</p>
+                    
+                    <p>Ondersteunen sociale voedselinitiatieven met
+                        groentepakketten van lokale boeren</p>
+                    </section>
+                    <button> <a href="https://boerenvoorburen.nl/" target="_blank">Meer Informatie</a></button>
+                </article>
+
+                <article class="card">
+                    
+                    <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="chasse-dancestudios">
+                    <section class="card-content">
+
+                    <h2>Chasse Dance Studio</h2>
+
+                    <p class="info-initiatief"> <i class="fa-solid fa-location-dot"  alt="icoon locatie"></i>  chassekerk</p>
+                    <p class="info-initiatief"><i class="fa-solid fa-calendar-days"  alt="icoon datum"></i> gehele week</p>
+                    
+                    <p>Wij zijn op zoek naar enthousiaste mensen die zich willen ontwikkelen als danser.</p>
+                    </section>
+                    <button> <a href="https://www.chasse-dancestudios.nl/" target="_blank">Meer Informatie</a></button>
+                </article>
+                <article class="card">
+                    
+                    <img src="https://images.unsplash.com/photo-1482627750753-afdba16659ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Buurt Koor">
+                    <section class="card-content">
+
+                    <h2>Bos en Lommer Zingt</h2>
+
+                    <p class="info-initiatief"> <i class="fa-solid fa-location-dot"  alt="icoon locatie"></i>  diverse locatie</p>
+                    
+                    <p>Buurtkoor uit Bos en Lommer</p>
+                    </section>
+                    <button> <a href="https://www.facebook.com/BewonerskoorBosenLommerzingt/?locale=nl_NL" target="_blank">Meer Informatie</a></button>
                 </article>
             </section>
         </section>
+        <section class="contact" id="contact">
+            <h1>Contact</h1>
+            <form>
+                <label for="fname">Voornaam:</label>
+                <input type="text" id="fname" name="fname" required>
+        
+                <label for="lname">Achternaam:</label>
+                <input type="text" id="lname" name="lname" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Bericht/ Vraag of Initiatief:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+        
+        
     </main>
 </body>
 </html>
